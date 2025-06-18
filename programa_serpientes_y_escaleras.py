@@ -14,7 +14,7 @@ while estado_de_juego=="S" or estado_de_juego=="s":
   n_preguta=random.randint(0, 14)
   numero_aleatoria_que_no_se_repite(n_preguta,lista_ya_preguntadas)
  pregunta(preguntas,n_preguta)
- resultado_pregunta=comprueba_la_respuesta(preguntas,n_preguta,tomar_respuesta())
+ resultado_pregunta=comprueba_la_respuesta(preguntas,n_preguta,input_usario())
  print("tu respuesta es",resultado_pregunta)
  lista_ya_preguntadas.append(n_preguta)
  posision_deljugador=movimiento(posision_deljugador,tablero,resultado_pregunta)
