@@ -13,7 +13,6 @@ while estado_de_juego=="S" or estado_de_juego=="s":
  while numero_aleatoria_que_no_se_repite(n_preguta,lista_ya_preguntadas)== False:
   n_preguta=random.randint(0, 14)
   numero_aleatoria_que_no_se_repite(n_preguta,lista_ya_preguntadas)
- #resultado_pregunta=pregunta(preguntas,n_preguta)
  pregunta(preguntas,n_preguta)
  resultado_pregunta=comprueba_la_respuesta(preguntas,n_preguta,tomar_respuesta())
  print("tu respuesta es",resultado_pregunta)
@@ -34,6 +33,3 @@ if estado_de_juego=="N" or estado_de_juego=="n":
 
 
 
-#for e_dic in preguntas:
-    #print(e_dic)
-#print(nombre)
