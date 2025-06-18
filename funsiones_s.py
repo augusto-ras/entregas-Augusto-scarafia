@@ -27,7 +27,7 @@ def  pregunta(pregun:list,valor:int):
           pregun[valor]["respuesta_c"]
           )
 
-def tomar_respuesta()->str:
+def input_usario()->str:
    usuario_respueta=input("elegi tu respuesta: (a/b/c): ")
    return usuario_respueta
 
