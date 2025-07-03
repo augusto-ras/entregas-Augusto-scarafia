@@ -78,10 +78,10 @@ def ganaste_o_perdiste(puntero: int) -> str:
     Retorna resultado (str): "g" si ganó, "p" si perdió, "s" si el juego continúa."""
     if puntero == 30:
         print("ganador")
-        resultado = "g"
+        resultado = "n"
     elif puntero == 0:
         print("perdedor")
-        resultado = "p"
+        resultado = "n"
     else:
         resultado = "s"
     return resultado
