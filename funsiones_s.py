@@ -4,7 +4,7 @@ def pedir_nombre_usuario()->str:
     nombre=input("nombre del jugador: ")
     return nombre
 
-def elige_estado_de_juego()->str:#pide unu input , lo valida si es un "s/S" o "n/N" y lo retorna.
+def elige_estado_de_juego()->str:
     """Pide un input (valor), lo valida si es "s/S" o "n/N".    
      Retorna el valor como str."""
     valor=input("desea jugar? (s/n): \n")
@@ -14,7 +14,7 @@ def elige_estado_de_juego()->str:#pide unu input , lo valida si es un "s/S" o "n
     
     return valor
 
-def numero_aleatoria_que_no_se_repite(valor:int,lista:list)->bool :# comprueva si un numero esta en uan lista y retorna False si lo esta y True si no 
+def numero_aleatoria_que_no_se_repite(valor:int,lista:list)->bool : 
    """Función que comprueba si un número está en una lista.     
       Parámetros:     
       valor: un número (int)  
