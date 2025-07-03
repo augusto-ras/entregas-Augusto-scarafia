@@ -37,5 +37,3 @@ if estado_de_juego=="N" or estado_de_juego=="n" :
 
 
 
-
-
