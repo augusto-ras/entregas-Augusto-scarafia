@@ -4,7 +4,7 @@ def pedir_nombre_usuario()->str:
     nombre=input("nombre del jugador: ")
     return nombre
 
-def elige_estado_de_juego()->str:
+def elige_estado_de_juego()->str:#pide unu input , lo valida si es un "s/S" o "n/N" y lo retorna.
     """Pide un input (valor), lo valida si es "s/S" o "n/N".    
      Retorna el valor como str."""
     valor=input("desea jugar? (s/n): \n")
@@ -14,7 +14,7 @@ def elige_estado_de_juego()->str:
     
     return valor
 
-def numero_aleatoria_que_no_se_repite(valor:int,lista:list)->bool :
+def numero_aleatoria_que_no_se_repite(valor:int,lista:list)->bool :# comprueva si un numero esta en uan lista y retorna False si lo esta y True si no 
    """Función que comprueba si un número está en una lista.     
       Parámetros:     
       valor: un número (int)  
@@ -93,15 +93,16 @@ def ganaste_o_perdiste(puntero:int)-> str:
       resultado="s"
    return resultado
 
-def  archivos_csv(nombre:str,posision:int):
+def  archivos_csv(nombre:str,posición:int):
    """Crea un archivo CSV con el nombre y puntuación del jugador.     
       Parámetros:  
       nombre: str con el nombre elegido por el jugador.   
       posición: int que representa su posición en el tablero (se usa como puntuación)."""
-   posision_str=str(posision)
-   puntuasion= open("Score.csv","a")
-   puntuasion.write("\nNombre del jugador: ")
-   puntuasion.write(nombre)
-   puntuasion.write("\npuntuasion del jugador: ")
-   puntuasion.write(posision_str)
+   posición_str=str(posición)
+   puntuación= open("Score.csv","a")
+   puntuación.write("\nNombre del jugador: ")
+   puntuación.write(nombre)
+   puntuación.write("\npuntuasion del jugador: ")
+   puntuación.write(posición_str)
+
 
