@@ -95,6 +95,5 @@ def archivos_csv(nombre: str, posición: int):
     puntuación = open("Score.csv", "a")
     puntuación.write("\nNombre del jugador: ")
     puntuación.write(nombre)
-    puntuación.write("\nPuntuación del jugador: ")
+    puntuación.write("\nPuntuacion del jugador: ")
     puntuación.write(posición_str)
-
