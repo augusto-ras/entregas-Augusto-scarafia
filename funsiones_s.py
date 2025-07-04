@@ -91,9 +91,6 @@ def archivos_csv(nombre: str, posición: int):
     Por parámetro obtiene:  
     nombre: str con el nombre elegido por el jugador.   
     posición: int que representa su posición en el tablero (se usa como puntuación)."""
-    posición_str = str(posición)
-    puntuación = open("Score.csv", "a")
-    puntuación.write("\nNombre del jugador: ")
-    puntuación.write(nombre)
-    puntuación.write("\nPuntuacion del jugador: ")
-    puntuación.write(posición_str)
+    with open("Score.csv", "a", newline='') as archivo:
+        escritor = csv.writer(archivo)
+        escritor.writerow(["jugador:",nombre, posición,])
